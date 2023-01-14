@@ -1,0 +1,132 @@
+:root{
+    --background-color : #0B090A ;
+    --top-bar-color-slide-bar-color : #161A1D ;
+    --normal-text-color : #ADE8F4; ;
+    --main-text-color : #00B4D8 ;
+    --big-box-color : #161A1D ;
+    --smaill-box-color : #CAF0F8 ;
+    --learnmore-box-color : #00B4D8 ;
+    --text-normal-size : 16px; 
+    --text-main-size : 48px ;
+    --font-type : Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: var(--background-color);
+    height: auto;
+    width: auto;
+}
+.leftbar a.leftwords:hover {
+    color: var(--learnmore-box-color);
+}
+.leftbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+section.topbar{
+    background-color: var(--top-bar-color-slide-bar-color);
+    height: 60px;
+    padding-top: 10px;
+}
+section.topbar span.span{
+    padding-left: 20px;
+    font-size:30px;
+    cursor:pointer;
+    color: var(--main-text-color);
+}
+section.topbar span.span:hover{
+    color: var(--learnmore-box-color);
+}
+section.topbar div.leftbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--big-box-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+section.topbar div.leftbar a{
+    font-size: var(--text-normal-size);
+    color: var(--normal-text-color);
+    font-family: var(--font-type);
+    margin-top: 20px;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 8px 0px 8px 52px;
+    transition: 0.3s;
+    display: flex;
+}
+/************************* Web Site************************/
+section.info{
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 5vh;
+
+}
+section.info div.welcome{
+    flex: 1;
+    border-radius: 80px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.info div.welcome p.maintext{
+    color: var(--main-text-color);
+    font-size: var(--text-main-size);
+    font-family: var(--font-type);
+    margin-top: 20px;
+    flex: 0.3;
+
+}
+section.info div.welcome p.totaltext{
+    color: var(--smaill-box-color);
+    font-family: var(--font-type);
+    flex: 0.7;
+    font-size: var(--text-normal-size);
+    margin-left: 50px;
+    margin-right: 40px;
+    line-height: 30px;
+
+}
+section.info div.welcome nav{
+    flex: 0.5;
+}
+section.info div.welcome nav a.btn{
+    background-color: var(--learnmore-box-color);
+    font-size: 20px;
+    border-radius: 5px;
+    color: var(--background-color);
+    font-size: var(--text-normal-size);
+    font-family: var(--font-type);
+    padding: 15px 60px 15px 60px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.info div.right{
+    flex: 1;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.info div.right div.photo{
+    height: 450px;
+    width: 450px;
+    background: url("imgs/mypic.png") no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+
+}

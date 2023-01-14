@@ -1,0 +1,99 @@
+:root{
+    --background-color : #0B090A ;
+    --top-bar-color-slide-bar-color : #161A1D ;
+    --normal-text-color : #ADE8F4; ;
+    --main-text-color : #00B4D8 ;
+    --big-box-color : #161A1D ;
+    --smaill-box-color : #CAF0F8 ;
+    --learnmore-box-color : #00B4D8 ;
+    --text-normal-size : 16px; 
+    --text-main-size : 48px ;
+    --font-type : Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}   
+body{
+background-color: var(--background-color);
+}
+.leftbar {padding-top: 15px;}
+.leftbar a {font-size: 18px;}
+.leftbar a.leftwords:hover {
+    color: var(--learnmore-box-color);
+}
+.leftbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+section.topbar{
+    background-color: var(--top-bar-color-slide-bar-color);
+    height: 50px;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+section.topbar span.span{
+    padding-left: 20px;
+    font-size:30px;
+    color: var(--main-text-color);
+}
+section.topbar div.leftbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--big-box-color);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out; 
+    padding-top: 50px;
+}
+section.topbar div.leftbar a{
+    font-size: var(--text-normal-size);
+    color: var(--normal-text-color);
+    font-family: var(--font-type);
+    margin-top: 20px;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 8px 0px 8px 42px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+}
+/********************* Web Site **********************/
+section.info{
+    display: flex;
+    flex-direction: column-reverse;
+}
+section.info div.rightside{
+    flex: 1;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+section.info div.rightside div.photo{
+    height: 350px;
+    width: 350px;
+    background: url("../../imgs/baghdadpic.png") no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+
+}
+section.info div.leftside {
+    flex: 1;
+    margin: 0px 15px 50px 20px;
+}
+section.info div.leftside p{
+    color: var(--smaill-box-color);
+    font-family: var(--font-type);
+    flex: 0.7;
+    font-size: var(--text-normal-size);
+    margin-left: 40px;
+    margin-right: 20px;
+    line-height: 35px;
+}

@@ -1,0 +1,154 @@
+:root{
+    --background-color : #0B090A ;
+    --top-bar-color-slide-bar-color : #161A1D ;
+    --normal-text-color : #ADE8F4; ;
+    --main-text-color : #00B4D8 ;
+    --big-box-color : #161A1D ;
+    --smaill-box-color : #CAF0F8 ;
+    --learnmore-box-color : #00B4D8 ;
+    --text-normal-size : 16px; 
+    --text-main-size : 48px ;
+    --font-type : Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}   
+body{
+background-color: var(--background-color);
+}
+.leftbar a.leftwords:hover {
+    color: var(--learnmore-box-color);
+}
+.leftbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+section.topbar{
+    background-color: var(--top-bar-color-slide-bar-color);
+    height: 50px;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+section.topbar span.span{
+    padding-left: 20px;
+    font-size:30px;
+    color: var(--main-text-color);
+}
+section.topbar div.leftbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--big-box-color);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out; 
+    padding-top: 50px;
+}
+section.topbar div.leftbar a{
+    font-size: var(--text-normal-size);
+    color: var(--normal-text-color);
+    font-family: var(--font-type);
+    margin-top: 20px;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 8px 0px 8px 42px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+}
+/************************* Web Site************************/
+section.info {
+    margin-top: 20px;
+}
+section.info div.maintext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.info div.maintext p{
+    color: var(--main-text-color);
+    font-size: var(--text-main-size);
+    font-family: var(--font-type);
+}
+section.info section.descrption {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+}
+section.info section.descrption div.leftside {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+section.info section.descrption div.leftside p {
+    color: var(--smaill-box-color);
+    font-family: var(--font-type);
+    font-size: var(--text-normal-size);
+    margin-left: 50px;
+    margin-right: 40px;
+    line-height: 35px;
+}
+section.info section.descrption div.rightside {
+    width: 380px;
+    height: 300px;
+
+}
+section.info section.descrption div.rightside div.all{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+section.info section.descrption div.rightside div.all div.up{
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+section.info section.descrption div.rightside div.all div.up div.html{
+    background: url("../../imgs/html.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+section.info section.descrption div.rightside div.all div.up div.css{
+    background: url("../../imgs/css3.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+section.info section.descrption div.rightside div.all div.up div.js{
+    background: url("../../imgs/javascript.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+section.info section.descrption div.rightside div.all div.bottom{
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+
+}
+section.info section.descrption div.rightside div.all div.bottom div.node{
+    background: url("../../imgs/node.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+section.info section.descrption div.rightside div.all div.bottom div.react{
+    background: url("../../imgs/react.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+section.info section.descrption div.rightside div.all div.bottom div.vue{
+    background: url("../../imgs/vue.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
